@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: true
+  tasks:
+
+  # - name:  set localhost name to inventory hostname
+  #   hostname:
+  #     name: ""
+
+  - name: Generate /etc/hosts file
+    template:
+      src=templates/hosts.j2
+      dest=/etc/hosts

@@ -1,0 +1,36 @@
+kind: Secret
+ansible_user: ENC[AES256_GCM,data:ABizjo3PcieKUA==,iv:4b/b13m151zhOdmdqkA+Ogp4zIx8IwUB+GtiWb2hcig=,tag:g2v0GvbcTKBGGoYrwvXmCg==,type:str]
+ansible_become_pass: ENC[AES256_GCM,data:kRU9uYnwZMsUXA==,iv:y3Qc1mtAeecrAOk+0MmrmudSOMgMiDXSXY62cSU75Fw=,tag:aqy5XoEz1NZnf9J0+H4Z2g==,type:str]
+ansible_python_interpreter: ENC[AES256_GCM,data:7JifgByEWWoWiSW+EdZegQ==,iv:TsyqPX63ZPEpDMCaO0x6uZ7AicwdfsNWkB7k13jVGQ4=,tag:Gqtg52jeMc7NnoMBua2Edg==,type:str]
+k3s_control_node: ENC[AES256_GCM,data:3JrtjI8=,iv:vUXU1SeVWibfcIbe9ZkjKB4nWgJ4tnMwoGHQaHcH5HY=,tag:RL59kYF23DVv3zsaDHUS7Q==,type:bool]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2021-10-12T20:00:17Z"
+    mac: ENC[AES256_GCM,data:zf8xbGXX6xS9qZ4AAS7CJz/AP6F793PPNEfDYOJpFIvAR86hsfJ0+s9q2obot16qZLXOkbgrcYmdBqprmWa0VnjsvdSqOdsOdrPtDMKNRd1yundtvxQ7ezmcm7L3S2M9uOYvSiiRoFZ9V3fGZMjH81pBFzWlqQB1WJQCkA91cHY=,iv:8y5nbCdxFqdyeCJtNR5z/e5eK9v+0uyDguppQTIGm5c=,tag:XPg0y+Mnm3b2RXCnthbh+w==,type:str]
+    pgp:
+        - created_at: "2021-10-12T19:32:45Z"
+          enc: |
+            -----BEGIN PGP MESSAGE-----
+
+            hQIMA15PqsG8JzviAQ//RlRgsk/6BwKICcAsX6AV2ttHtE+NPD+UCHuEuLU6qbtH
+            zxO/mXNqPCBOQmDZ8zXxbZUW/yPKLcCDM1KGjSh6GJcqxjQTPgxYXLRwmP5tQRIe
+            LS4bqL2Rw0H3HqXxnBZ66Pch3fF6AD0GE4z4nttNhY+xgXG+BeQSPKBunaij2zOA
+            I43JQ4ADl9P683WLBToElKhnin5vvWG1VWKoFkGZS9xwv+4zsWZq960p7nnFYSZ/
+            3xOhGf5AbVT8jW3yS91MgkPs7NBZggA5BRMFdHsaCkFfTrJbQYqY5SYIXH/8UjCi
+            OuTt/giTW9IXxeW2Ss8B7DEaAdNjh/AVRZ7EAnu66db6NqojBWQVt4mqsteyjIBs
+            EE3gCb+CeO0jXLXANwLGJQ1h9LsNio5k78caJzeJwyAC8jUU7YobOUmneqEpGzqq
+            KkFl2pkIUugNNaIdGTlI+oaUy/k8r78efcU5WfPelH3K//qgGaj7ot5CUNJbyNY1
+            KUu2QsRYITnwPa0jQ1/USzn/GVJqt1lLjOptqeZWEr+mx1nJXyrWAS1p6RIMQ7PF
+            TTWSFYTg7Img+R7ri14OaXR1QfdWwNnSaAFfGvc2sr6coY6LKUA6Svg+B+X2iTiz
+            FNmex++0OzpOueqMwqHfP2c2HUP1/i5+1V95lZQEW0B66NShr4u5ylzLT/RBHhDS
+            XgHEe6J9GcJ1k/K91KX7Jq5Zzj3AohYY1YhzRSTsmncWnBkhWwVXsKCvwIlWiDn3
+            kxFISyCICKrfnf77NjYKOBdWcJYspXrP3fViOR1FjDqcetHWT7pX92tA2dcX5E4=
+            =u9SI
+            -----END PGP MESSAGE-----
+          fp: F2B7F017852BF3D6D9D4341E6927A3487B629E14
+    unencrypted_regex: ^(kind)$
+    version: 3.7.1

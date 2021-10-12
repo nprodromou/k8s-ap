@@ -1,0 +1,38 @@
+kind: Secret
+ansible_user: ENC[AES256_GCM,data:H90SYKxK5uPZXA==,iv:IWQNwjPG29OsihWdrWMSbzAbgr4r5kJddDCDQ/R2nzE=,tag:vylfHv1LZ8WxHHDI8dGq8Q==,type:str]
+ansible_become_pass: ENC[AES256_GCM,data:vQnTEN81XL3GtA==,iv:se2FPmktSeAJ32WiPiArDogSGcKpgB8z7VnFFbv3In0=,tag:1hZgqWxbxi63FpV/+ejS2Q==,type:str]
+ansible_python_interpreter: ENC[AES256_GCM,data:LrjNGGO1QPCS7ObL+zvMJw==,iv:DD5oaZmkhkPqip8/xCeM6+VFg1VkAP6aw+x2lrmKR7U=,tag:Z/lWBJqCzqc1wYojIoJwyQ==,type:str]
+k3s_control_node: ENC[AES256_GCM,data:0/KBsm0=,iv:88Gn39x59Jmpt5p9gQhTkJlE8pDT7JMoKr31VMqe06Q=,tag:LScwgKE/2ONz+9UCp49fAQ==,type:bool]
+rook_devices:
+    - ENC[AES256_GCM,data:AxaolR21T5b8,iv:xx/Qt+O394c2XLLFgHsLOM8NC9TjHM29HI2AAdqrSv8=,tag:0uxgT0/YR39Ia2m9LBW+Sg==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2021-10-12T19:57:01Z"
+    mac: ENC[AES256_GCM,data:2r+NBSYfSmUbNUFU50NTqhul/LY/4KTB9GopoDCA/rdmVh9oBJuFJJBCxq1L2lsRV/ygrsqB8Fv7jAZhlgKn889OTTEPNFkfPS3Pp4cZhdroJQw6gqcKz24cXpFqi4kjYQkfR1hn1uL4vDkYdpu55WLY8F6LF4gB2ntlKEeTL+g=,iv:ETO4fZ0vatDs7iVwP0kpgnM/T43xV16KC9xK+ce6FHg=,tag:+30J5Pv27uj9ZC04Lhu0iQ==,type:str]
+    pgp:
+        - created_at: "2021-10-12T19:32:37Z"
+          enc: |
+            -----BEGIN PGP MESSAGE-----
+
+            hQIMA15PqsG8JzviAQ//SepN2a16anS7bmfJJOUq4pC6S09WSQPmnMUO4yZhp9Kt
+            4X8nkSaatU3M7sl8QQCoz0ZaChlf46TD5XLW3oBtiBMmZBo/KrDThFTIinjAvk9n
+            msqTZ0wfHexxeYaU6T7cyS2EU2At9en7avin70IMDiLpFTrVsJdozOctJ5uvGZsT
+            Z95cjEiQqaZYKj4x5w9mBxMSmWoTV9L8aSuzBL4d48aOMtJHJb9SH6DSxpPgxSp3
+            4wiCd6MpeBdJ3QhY10bfl7BJTYvr0AcKiPWDT542EiOklxmgR8nigRVDBkGMQsMB
+            VmjHG3LVxtlV/GPI/KOpGcXZuoiR4izG79m0PVenhO7uV6pYoOU4AW3OEnH5UXwj
+            c3aY7RN81/461C75VkNTDiD9m3iCLZtONqDpRqwwwk6cnxTchBl6zFqF5QmPSk32
+            dQ7KDGtgOZMFv/NQCkg1G0ADiG5r18Xnir+jjUOgCSOoLw9sebb17+U4anjH+xQF
+            fp1z4zhYO/h1KFyy5jOTG3whnyp4eWFaA0w8j57MQ1ifVnRrR2HcLz2ti8Cnnqnn
+            Kq/XFCvKj3axYKI934XwIQKc572l/djvMLH/P2tst4Jv9orxwUfqJQIbjQb+vG85
+            IsbNRzhcRN6RnxigPdAkEz7Dr4EAbHt2yobqxlRx+hAW8NpSCbnbRL+9wB1CZ9fS
+            XgF0vVCfNzj2tEpoE0xaXGlRDdZReyDFb84saurHW065DDVzX+fvg4SOGYJnwX01
+            /skcUAf83hOAQSgOWh3/EUipkO87q0+WvFZkk3tq+jx8E+iUT183FHcmgGFgy7o=
+            =k44o
+            -----END PGP MESSAGE-----
+          fp: F2B7F017852BF3D6D9D4341E6927A3487B629E14
+    unencrypted_regex: ^(kind)$
+    version: 3.7.1

@@ -1,0 +1,4 @@
+kind: Secret
+ansible_user: nprodromou
+ansible_become_pass: dandyl10^!
+ansible_python_interpreter: /usr/bin/python3
