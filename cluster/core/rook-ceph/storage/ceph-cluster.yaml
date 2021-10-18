@@ -11,7 +11,6 @@ spec:
   dataDirHostPath: /var/lib/rook
   skipUpgradeChecks: false
   continueUpgradeAfterChecksEvenIfNotHealthy: false
-  removeOSDsIfOutAndSafeToRemove: false
   mon:
     count: 3
     allowMultiplePerNode: false
@@ -20,9 +19,8 @@ spec:
       tolerations:
         - operator: "Exists"
   monitoring:
-    enabled: true
+    enabled: false
     rulesNamespace: rook-ceph
-  network:
   crashCollector:
     disable: false
   cleanupPolicy:
@@ -32,6 +30,7 @@ spec:
       dataSource: zero
       iteration: 1
   mgr:
+    count: 2
     modules:
       - name: pg_autoscaler
         enabled: true
@@ -40,7 +39,7 @@ spec:
     port: 7000
     ssl: false
   disruptionManagement:
-    managePodBudgets: false
+    managePodBudgets: true
     osdMaintenanceTimeout: 30
     manageMachineDisruptionBudgets: false
     machineDisruptionBudgetNamespace: openshift-machine-api
@@ -58,8 +57,8 @@ spec:
       limits:
         memory: 4096Mi
   storage:
-    useAllNodes: false
-    useAllDevices: false
+    useAllNodes: true
+    useAllDevices: true
     config:
       osdsPerDevice: "1"
     nodes:
