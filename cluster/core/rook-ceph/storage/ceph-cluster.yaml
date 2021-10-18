@@ -36,8 +36,8 @@ spec:
         enabled: true
   dashboard:
     enabled: true
-    port: 8443
-    ssl: true
+    port: 7000
+    ssl: false
   disruptionManagement:
     managePodBudgets: true
     osdMaintenanceTimeout: 30
