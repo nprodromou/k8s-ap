@@ -33,6 +33,7 @@ spec:
         externalTrafficPolicy: Local
     logs:
       general:
+        filePath: "/tmp/traefik.log"
         format: json
         level: DEBUG
       access:
