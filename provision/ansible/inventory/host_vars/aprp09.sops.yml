@@ -3,16 +3,18 @@ ansible_user: ENC[AES256_GCM,data:Rwhmrus8iDuxaA==,iv:N6oA3o48rLThLoj0nchyoI8jlj
 ansible_become_pass: ENC[AES256_GCM,data:hBvCwrL0MbD7Kg==,iv:J/8XUPflbgTJQQcxsxnl3pzFM+NiaYOGSic2QVNWAZo=,tag:1KeDnapZZdNhHFEEcm+iOQ==,type:str]
 ansible_python_interpreter: ENC[AES256_GCM,data:/nicShfvh/0+GG4B0hwWAw==,iv:j0xwj17ESvjvjOuYhNxOxDHneirvQTgKZHSdCsFslJw=,tag:FGS1Yp0jKW6wzAIn2GURZw==,type:str]
 k3s_control_node: ENC[AES256_GCM,data:eDFD/BI=,iv:e8oU+2OTRk1kfJHkGzsdd6+Psi0TOGNHHHEfe4nmFQ0=,tag:N8fgY1EzhAUl9oKhCdONJQ==,type:bool]
-rook_devices:
-    - ENC[AES256_GCM,data:v2wvY2eNfQ9w,iv:J9Df/NqaG9F2fAtoRzjk/4KO0UvGKsW7cNqE7Ud8yKQ=,tag:VyLcNCGrLwurr1UV/zhUGQ==,type:str]
+rook_ceph:
+    enabled: ENC[AES256_GCM,data:RfHy+w==,iv:RE7RxdiyrdtC35JDkrbeHfjb5inwVv9Uh004QZSpLsk=,tag:88Cvly5UpPtgm90qLGu+Jw==,type:bool]
+    devices:
+        - ENC[AES256_GCM,data:ISZUe+ExgW4=,iv:7AZvFgxFh20DLNc6OarQAoefygz77GM2tg2EBV2EWcc=,tag:FZvfdm+BCr5j3W5TdaqTEg==,type:str]
 sops:
     kms: []
     gcp_kms: []
     azure_kv: []
     hc_vault: []
     age: []
-    lastmodified: "2021-10-12T19:57:00Z"
-    mac: ENC[AES256_GCM,data:awX0X3xiWbdRDZpC3E9LYXTnjqALn3rgaAYOjKhPaK8yMCFXJ8maaDtOHgXAkRwUk9W3+Ybrkr74CFvTuN0kLe6wX5b3mWX4Vdry7myQdHID6ByBV+ttVvO9rWJk4GLULId1HzDPRZwhSI7rgPjnfKpF6hUoAqUDUOC/p4zUXuI=,iv:nvLFm8vNgAxWmbzdNqRsyWtL5iiB4XkqndwX8UdxE60=,tag:oB4fEEsA4BXgbVBM4ym/hA==,type:str]
+    lastmodified: "2021-11-03T00:26:58Z"
+    mac: ENC[AES256_GCM,data:FPXGueqb9KSje8cmcFFeDOXcfIMGPqx3uGXy0HOPAb3Ol2WK4olMHkLAj5cq1TdjnecHuPcxuinEYTcPxyD+0Jhy/SB6QMMOiX3jwDKRBPhc+oCi5d+0Qwnzg5S4w4leRG1f2bfLuYXIyD/2g/CHJLAt03zVVooFmmLxH3cclcU=,iv:7ieV8drW1DlFKPoD/WCk0A5LklCc78FL5JpUj6F+Jn4=,tag:wpc2IJG1z2GRqmlRXCPyHw==,type:str]
     pgp:
         - created_at: "2021-10-12T19:32:36Z"
           enc: |
