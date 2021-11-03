@@ -1,0 +1,45 @@
+---
+- hosts:
+    - ceph
+  become: true
+  gather_facts: true
+  any_errors_fatal: true
+  vars:
+    disk: "/dev/sda"
+  pre_tasks:
+    - name: Pausing for 5 seconds...
+      pause:
+        seconds: 5
+  tasks:
+    - name: Delete /var/lib/rook
+      ansible.builtin.file:
+        path: /var/lib/rook
+        state: absent
+    - name: Zap All Instances of "{{ disk }}"
+      command: 'sgdisk --zap-all "{{ disk }}"'
+      ignore_errors: yes
+
+    # - name: Clean hdds with dd
+    #   command: 'dd if=/dev/zero of="{{ disk }}" bs=1M count=100 oflag=direct,dsync'
+    #   ignore_errors: yes
+
+    - name: Clean disks such as ssd with blkdiscard instead of dd
+      command: 'blkdiscard "{{ disk }}"'
+      ignore_errors: yes
+
+    - name: If rook sets up osds using ceph-volume, teardown leaves some devices mapped that lock the disks.
+      command: 'ls /dev/mapper/ceph-* | xargs -I% -- dmsetup remove %'
+      ignore_errors: yes
+
+    - name: Remove /dev/ceph-*
+      command: 'rm -rf /dev/ceph-*'
+      ignore_errors: yes
+
+    - name: Remove /dev/mapper/ceph-*
+      command: 'rm -rf /dev/mapper/ceph-*'
+      ignore_errors: yes
+
+    - name: Inform the OS of partition table changes
+      command: 'partprobe "{{ disk }}"'
+      ignore_errors: yes
+
