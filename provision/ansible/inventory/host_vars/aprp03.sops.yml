@@ -1,6 +1,6 @@
 kind: Secret
 ansible_user: ENC[AES256_GCM,data:A8+er/6PsRWjog==,iv:FCgYXROVcD52wOiQesa5tfIUCsxSsr2KS2RvD3FA3Ag=,tag:OuJTW9Wq1QXwZ02DxywT3g==,type:str]
-ansible_become_pass: ENC[AES256_GCM,data:nRTm9oMhV3YaqA==,iv:P4kuoL4j5Gh+xSBy97Ep/pE21ZOMRoW6HY/j2Gw+aX0=,tag:q/yOlvymysr+nByT1D87Mw==,type:str]
+ansible_become_pass: ENC[AES256_GCM,data:9gfffwOQz9kI4E4=,iv:FNV+QIMD7ft8cXKulztbtCDPibdtHQsflSYWNCbN25M=,tag:cyKu4O7xYBKJL9B1AMM2Og==,type:str]
 ansible_python_interpreter: ENC[AES256_GCM,data:To4QyvBhszMJ0UwHq6MxFg==,iv:a6Ao6UeRw+cMVVebuwpoEwCGo+y5EsUowIZatFTCN9E=,tag:/ILqKCtkMLoy3C98PbjOzQ==,type:str]
 k3s_control_node: ENC[AES256_GCM,data:bDkIvQo=,iv:K91E/qL+0l9VbonpGOAWzyEVh1TgA4YeY/H427AeJ0g=,tag:HcqIsyiFf2cIFEOtAkFzgw==,type:bool]
 rook_ceph:
@@ -13,8 +13,8 @@ sops:
     azure_kv: []
     hc_vault: []
     age: []
-    lastmodified: "2021-11-03T00:23:57Z"
-    mac: ENC[AES256_GCM,data:YUCvX1BfBR2DTqdiNkbHvcvz8qe1XGnK6t4bGzHO8mBnTuKueO7uiGH/gcbnWlB0G75X7d3i8GmlMpNVoQqTdYLquV9TrP3xOQJS4WKtJTyG8Gl0VS4FLgW/qDkXtSoLtogpdbfj1WviS8Y0V3ybPRYwPh6EEBXBWWuJrMr24ho=,iv:qhC1C41SW4uzrza6z8cL0bRnNLKowYsRXDbQGRfCyzI=,tag:w3nwW/kiQ3GvZ5nlfBQdVA==,type:str]
+    lastmodified: "2021-11-03T04:21:57Z"
+    mac: ENC[AES256_GCM,data:xrZ4Zoy8yD0SaAm+3dD8BEuzu1h7cacQ8RycgPH+bEIouiON6shxSh3YsxYB4zTrLqd3KV3/e1eaG4xi4WBSM56FRBZsnQvT1fZXQScv36jBmJKNWxP9ue1vLPSvI7MaKRK4nfM/A85TDhZ/Ip163GPe5cBPPXQjC5xunMcj+Do=,iv:TrX9gb7imIg5xxioU9Bj1jAmEpHil/1KpBkAYEa+9OY=,tag:GJ+u4dmw9bSNUmO4NU25dg==,type:str]
     pgp:
         - created_at: "2021-10-12T19:32:55Z"
           enc: |
