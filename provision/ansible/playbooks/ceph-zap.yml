@@ -19,17 +19,13 @@
       command: 'sgdisk --zap-all "{{ disk }}"'
       ignore_errors: yes
 
-    # - name: Clean hdds with dd
-    #   command: 'dd if=/dev/zero of="{{ disk }}" bs=1M count=100 oflag=direct,dsync'
+    - name: Clean hdds with dd
+      command: 'dd if=/dev/zero of="{{ disk }}" bs=1M count=100 oflag=direct,dsync'
+      ignore_errors: yes
+
+    # - name: Clean disks such as ssd with blkdiscard instead of dd
+    #   command: 'blkdiscard "{{ disk }}"'
     #   ignore_errors: yes
-
-    - name: Clean disks such as ssd with blkdiscard instead of dd
-      command: 'blkdiscard "{{ disk }}"'
-      ignore_errors: yes
-
-    - name: If rook sets up osds using ceph-volume, teardown leaves some devices mapped that lock the disks.
-      command: 'ls /dev/mapper/ceph-* | xargs -I% -- dmsetup remove %'
-      ignore_errors: yes
 
     - name: Remove /dev/ceph-*
       command: 'rm -rf /dev/ceph-*'
