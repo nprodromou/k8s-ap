@@ -4,6 +4,6 @@ resources:
   - default
   - kube-system
   - media
-#  - monitoring
+  - monitoring
   - networking
   - system-upgrade

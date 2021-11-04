@@ -69,11 +69,11 @@ spec:
             path: /Shares/Files/video
         mountPath: /video
     podAnnotations:
-      # backup.velero.io/backup-volumes: config
-      # pre.hook.backup.velero.io/container: fsfreeze
-      # pre.hook.backup.velero.io/command: '["/sbin/fsfreeze", "--freeze", "/config"]'
-      # post.hook.backup.velero.io/container: fsfreeze
-      # post.hook.backup.velero.io/command: '["/sbin/fsfreeze", "--unfreeze", "/config"]'
+      backup.velero.io/backup-volumes: config
+      pre.hook.backup.velero.io/container: fsfreeze
+      pre.hook.backup.velero.io/command: '["/sbin/fsfreeze", "--freeze", "/config"]'
+      post.hook.backup.velero.io/container: fsfreeze
+      post.hook.backup.velero.io/command: '["/sbin/fsfreeze", "--unfreeze", "/config"]'
     resources:
       requests:
         memory: 250Mi
