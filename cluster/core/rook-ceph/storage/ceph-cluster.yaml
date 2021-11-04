@@ -30,7 +30,7 @@ spec:
       dataSource: zero
       iteration: 1
   mgr:
-    count: 2
+    count: 3
     modules:
       - name: pg_autoscaler
         enabled: true
