@@ -66,8 +66,8 @@ spec:
         volumeSpec:
           nfs:
             server: "${NAS_ADDR}"
-            path: /tycho/Media
-        mountPath: /media
+            path: /Shares/Files/video
+        mountPath: /video
     podAnnotations:
       backup.velero.io/backup-volumes: config
       pre.hook.backup.velero.io/container: fsfreeze
