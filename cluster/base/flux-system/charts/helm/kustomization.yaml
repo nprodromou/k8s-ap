@@ -20,7 +20,7 @@ resources:
   - external-dns-charts.yaml
   - lwolf-charts.yaml
   - metrics-server-charts.yaml
-  - metallb-system.yaml
+  - metallb-system-metallb.yaml
   - minecraft-server-charts.yaml
   - minio-charts.yaml
   - nfs-subdir-external-provisioner-charts.yaml
