@@ -69,8 +69,8 @@ spec:
         volumeSpec:
           nfs:
             server: "${NAS_ADDR}"
-            path: /Shares/Files/video
-        mountPath: /video
+            path: /Shares/Files/
+          mountPath: /Files/   
     podAnnotations:
       backup.velero.io/backup-volumes: config
       pre.hook.backup.velero.io/container: fsfreeze
