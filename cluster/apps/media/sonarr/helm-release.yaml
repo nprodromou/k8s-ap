@@ -39,11 +39,11 @@ spec:
           - hosts:
               - "sonarr.${SECRET_DOMAIN}"
     podSecurityContext:
+      runAsUser: "${SECRET_UID}"
+      runAsGroup: "${SECRET_GID}"
       supplementalGroups:
         - 100
-      securityContext:
-        runAsUser: "${SECRET_UID}"
-        runAsGroup: "${SECRET_GID}"
+
     metrics:
       enabled: true
       serviceMonitor:
