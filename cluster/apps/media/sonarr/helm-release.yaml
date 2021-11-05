@@ -39,6 +39,7 @@ spec:
           - hosts:
               - "sonarr.${SECRET_DOMAIN}"
     podSecurityContext:
+      runAsGroup: "${SECRET_GUID}"
       supplementalGroups:
         - 100
     metrics:
