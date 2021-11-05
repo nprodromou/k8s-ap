@@ -42,7 +42,8 @@ spec:
       supplementalGroups:
         - 100
       securityContext:
-        runAsGroup: "${SECRET_GUID}"
+        runAsUser: "${SECRET_UID}"
+        runAsGroup: "${SECRET_GID}"
     metrics:
       enabled: true
       serviceMonitor:
