@@ -8,13 +8,13 @@ resources:
   # - lidarr
   # - overseerr
   # - plex
-  - prowlarr
+  # - prowlarr
   # - qbittorrent
   # - qbittorrent-vpn
   # - radarr
   # - radarr-uhd
   # - readarr
   - sabnzbd
-  # - sonarr
+  - sonarr
   # - sonarr-uhd
   # - tautulli
