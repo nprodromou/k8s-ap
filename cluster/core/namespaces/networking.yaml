@@ -8,7 +8,7 @@ metadata:
 ---
 apiVersion: v1
 data:
-  .dockerconfigjson: ${SECRET_DOCKER_CONFIG}
+  .dockerconfigjson: "${SECRET_DOCKER_CONFIG}"
 kind: Secret
 metadata:
 
