@@ -3,3 +3,15 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: networking
+
+
+---
+apiVersion: v1
+data:
+  .dockerconfigjson: ${SECRET_DOCKER_CONFIG}
+kind: Secret
+metadata:
+
+  name: regcred
+  namespace: networking
+type: kubernetes.io/dockerconfigjson
