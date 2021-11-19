@@ -17,6 +17,8 @@ spec:
         app: rook-direct-mount
     spec:
       dnsPolicy: ClusterFirstWithHostNet
+      imagePullSecrets:
+        - name: regcred
       containers:
       - name: rook-direct-mount
         image: rook/ceph:v1.6.5

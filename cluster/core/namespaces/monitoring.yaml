@@ -5,3 +5,14 @@ metadata:
   name: monitoring
   # annotations:
   #   k10.kasten.io/ignorebackuppolicy: "true"
+
+---
+apiVersion: v1
+data:
+  .dockerconfigjson: "${SECRET_DOCKER_CONFIG}"
+kind: Secret
+metadata:
+
+  name: regcred
+  namespace: monitoring
+type: kubernetes.io/dockerconfigjson

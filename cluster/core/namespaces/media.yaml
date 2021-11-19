@@ -4,3 +4,14 @@ kind: Namespace
 metadata:
   name: media
 
+---
+apiVersion: v1
+data:
+  .dockerconfigjson: "${SECRET_DOCKER_CONFIG}"
+kind: Secret
+metadata:
+
+  name: regcred
+  namespace: media
+type: kubernetes.io/dockerconfigjson
+
