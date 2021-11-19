@@ -5,5 +5,5 @@ resources:
   - kube-system
   - metallb-system
   - namespaces
-#  - rook-ceph
+  - rook-ceph
   - system-upgrade

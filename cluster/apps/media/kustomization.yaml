@@ -11,7 +11,7 @@ resources:
   # - prowlarr
   # - qbittorrent
   # - qbittorrent-vpn
-  # - radarr
+  - radarr
   # - radarr-uhd
   # - readarr
   - sabnzbd
